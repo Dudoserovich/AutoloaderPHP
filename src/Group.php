@@ -36,10 +36,10 @@ class Group
     public function printStudents() {
         if (count($this->arrStudents))
             foreach($this->arrStudents as $student) {
-                print(str_replace(" говорит", "[{$this->getGroup()}] говорит" ,
+                echo(str_replace(" говорит", "[{$this->getGroup()}] говорит" ,
                         $student->getStudent()) . PHP_EOL);
             }
         else
-            print("Студенты группы {$this->getGroup()} вымерли!" . PHP_EOL);
+            echo("Студенты группы {$this->getGroup()} вымерли!" . PHP_EOL);
     }
 }

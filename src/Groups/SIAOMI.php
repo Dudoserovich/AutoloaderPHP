@@ -1,7 +1,7 @@
 <?php
-namespace University;
+namespace University\Groups;
 
-class SIAOMI extends Group
+class SIAOMI extends \University\Group
 {
     public function __construct()
     {
@@ -10,6 +10,6 @@ class SIAOMI extends Group
 
     public function sayGroup() {
         $group = parent::getGroup();
-        print($group . " - группа шизиков!" . PHP_EOL);
+        echo($group . " - группа шизиков!" . PHP_EOL);
     }
 }

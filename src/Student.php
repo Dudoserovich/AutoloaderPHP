@@ -16,6 +16,6 @@ class Student
     }
 
     public function say() {
-        print("{$this->name} говорит: \"{$this->quote}\"");
+        echo("{$this->name} говорит: \"{$this->quote}\"");
     }
 }
